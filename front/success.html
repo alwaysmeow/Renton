@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/payments_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/success_styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Оплата</title>
+    <title>Платеж обработан</title>
 </head>
 <body>
     <header>
         <img class = "logo" src="https://rencredit.ru/local/templates/.default/assets/images/logo.svg">
-        <div class="navigation">
+        <div class = "navigation">
             <div>
                 Кредиты
             </div>
@@ -28,30 +28,9 @@
         </div>
     </header>
     <main>
-        <div class="check">
-            <div class="amount">{{ amount }}₽</div><br>
-            <div class="blocks">
-                <div class="block">
-                    <div>ФИО получателя</div>
-                    <div>Ярослав Сергеевич И.</div>
-                </div>
-                <div class="block">
-                    <div>Телефон получателя</div>
-                    <div>+7 (911) 322-13-37</div>
-                </div>
-                <div class="block">
-                    <div>Номер карты получателя</div>
-                    <div>{{ account }}</div>
-                </div>
-            </div>
-            <input class="accept" type="submit" value="Подтвердить" id = "b">
-            <script>
-                $(document).ready(function() {
-                    $("#b").click(function() {
-                        window.location.href = "/success";
-                    });
-                });
-            </script>
+        <div class = "out">
+            <img src="https://www.svgrepo.com/show/294524/success-tick.svg" alt="">
+            <div>Платеж успешно обработан.</div>
         </div>
     </main>
     <footer>

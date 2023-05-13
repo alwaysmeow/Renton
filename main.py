@@ -44,5 +44,9 @@ def qr():
 def payment_request():
     return render_template('payment_request.html')
 
+@app.route('/success')
+def success():
+    return render_template('success.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8000)
