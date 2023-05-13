@@ -1,5 +1,5 @@
   /* Стили для формы */
-
+@media screen and (min-width: 768px) {
   .form{
     margin: 10% 0px;
     padding: 40px;
@@ -34,4 +34,41 @@
     box-sizing: border-box;
     margin-bottom: 20px;
   }
+}
   
+@media screen and (max-width: 767px){
+  .form{
+    margin: 20% 10%;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5%;
+  }
+
+  .req_label
+  {
+  font-size: 200%;
+  font-weight: bolder;
+  color: #ff0078;
+  margin-bottom: 30px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+}
