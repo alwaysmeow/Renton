@@ -21,7 +21,7 @@ def payment():
 
 @app.route('/qr')
 def qr():
-    link = "http://" + ipv4 + ":5000"+request.args.get('link')
+    link = "http://" + ipv4 + ":8000"+request.args.get('link')
     # Создайте объект QR-кода
     qr = qrcode.QRCode(version=1, box_size=10, border=5)
 
@@ -34,7 +34,7 @@ def qr():
 
     buffer = io.BytesIO()
     img.save(buffer)
-
+    img.save('static/qr_imgs/qr.png')
     # Преобразуйте изображение в строку base64
     img_str = "data:image/png;base64,"+base64.b64encode(buffer.getvalue()).decode()
 
@@ -45,4 +45,4 @@ def payment_request():
     return render_template('payment_request.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=8000)
