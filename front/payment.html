@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/payments_styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/payments_styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Оплата</title>
 </head>
 <body>
     <header>
-        <img class = "logo" src="https://rencredit.ru/local/templates/.default/assets/images/logo.svg">
-        <div class = "navigation">
+        <div class="logo">
+            Ренессанс
+        </div>
+        <div class="navigation">
             <div>
                 Кредиты
             </div>
@@ -28,23 +29,23 @@
         </div>
     </header>
     <main>
-        <div class = "check">
-            <div class = "amount">200₽</div><br>
-            <div class = "blocks">
-                <div class = "block">
+        <div class="check">
+            <div class="amount">{{ amount }}₽</div><br>
+            <div class="blocks">
+                <div class="block">
                     <div>ФИО получателя</div>
                     <div>Ярослав Сергеевич И.</div>
                 </div>
-                <div class = "block">
+                <div class="block">
                     <div>Телефон получателя</div>
                     <div>+7 (911) 322-13-37</div>
                 </div>
-                <div class = "block">
+                <div class="block">
                     <div>Номер карты получателя</div>
-                    <div>**6517</div>
+                    <div>{{ account }}</div>
                 </div>
             </div>
-            <input class = "accept" type="submit" value="Подтвердить">
+            <input class="accept" type="submit" value="Подтвердить">
         </div>
     </main>
     <footer>

@@ -5,160 +5,67 @@
     font-family: "Montserrat";
     user-select: none;
     transition: 0.5s;
-    font-size: calc(var(--min-font-size) + (var(--max-font-size) - var(--min-font-size)) * ((100vw - var(--min-screen-width)) / (var(--max-screen-width) - var(--min-screen-width))));
 }
 
-@media screen and (min-width: 768px) {
-        
-        /* Дополнительные стили для ПК */
-
-
-    .logo{
-        padding: 20px;
-        height: 15%;
-        width: 15%;
-    }
-
-    /* Стили для хедера */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #f7f7f7;
-        padding: 15px;
-        box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
-    }
-    
-    .navigation {
-        display: flex;
-        font-size: 18px;
-        margin-right: 50px;
-    }
-
-    .navigation div{
-        padding: 20px 40px;
-        border-left: 1px solid grey;
-    }
-
-    .navigation div:hover{
-        color:#ff0078;
-        font-weight: bold;
-        border-left: 1px solid #ff0078;
-    }
-
-    main {
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #dddddd;
-    }
-
-    main *{
-        background-color: #f7f7f7;
-    }
-    /* Стили для футера */
-    footer {
-        display: flex;
-        justify-content: space-between;
-        background-color: #1a191b;
-        padding: 15px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        box-shadow: 0px -3px 3px rgba(240, 240, 240, 0.1);
-    }
-    
-    footer div {
-        padding-top: 20px;
-        margin: 0 auto;
-        color: #777;
-        line-height: 1.5;
-    }
-
-    input[type="submit"] {
-        background-color: #ff0078;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 18px;
-    }
-    
-    input[type="submit"]:hover {
-        background-color: #d30465;
-    }
+.logo{
+    color: #ff0078;
 }
 
-@media screen and (max-width: 767px) {
-    .logo{
-        height: 50%;
-        width: 50%;
-    }
+/* Стили для хедера */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 15px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+  }
 
-    /* Стили для хедера */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #f7f7f7;
-        padding: 15px;
-        box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
-    }
-    
-    .navigation {
-        display: none;
-    }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Стили для футера */
+footer {
+    background-color: #1a191b;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px -3px 3px rgba(240, 240, 240, 0.1);
+  }
+  
+  footer div {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #777;
+    line-height: 1.5;
+  }
 
-    .navigation div{
-        padding: 20px 40px;
-        border-left: 1px solid grey;
-    }
-
-    .navigation div:hover{
-        color:#ff0078;
-        font-weight: bold;
-        border-left: 1px solid #ff0078;
-    }
-
-    main {
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #dddddd;
-    }
-
-    main *{
-        background-color: #f7f7f7;
-    }
-    /* Стили для футера */
-    footer {
-        display: flex;
-        justify-content: space-between;
-        background-color: #1a191b;
-        padding: 15px;
-        font-family: 'Montserrat', sans-serif;
-        box-shadow: 0px -3px 3px rgba(240, 240, 240, 0.1);
-    }
-    
-    footer div {
-        padding-top: 20px;
-        margin: 0 auto;
-        color: #777;
-        line-height: 1.5;
-    }
-
-    input[type="submit"] {
-        background-color: #ff0078;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    
-    input[type="submit"]:hover {
-        background-color: #d30465;
-    }
-}
+  input[type="submit"] {
+    background-color: #ff0078;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #d30465;
+  }
