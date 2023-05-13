@@ -1,0 +1,28 @@
+.check{    
+    justify-content: center;
+    padding: 40px;
+    margin: 10% 0px;
+    border: 1px solid grey;
+    border-radius: 5%;
+    width: 30%;
+}
+
+.amount{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #ff0078;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0px;
+    padding: 15px 0px;
+    border-bottom: 1px solid grey;
+}
+
+.accept{
+    margin: 20px 0px 0px 0px;
+}

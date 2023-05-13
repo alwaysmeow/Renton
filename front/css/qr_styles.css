@@ -1,0 +1,25 @@
+.out{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40% 0px;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5%;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #ff0078;
+    width: 100%;
+}
+
+.qr{
+    padding-top: 5%;
+    width: 30vh;
+    height: 30vh;
+}

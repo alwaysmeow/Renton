@@ -1,0 +1,37 @@
+  /* Стили для формы */
+
+  .form{
+    margin: 10% 0px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5%;
+}
+  
+.req_label
+{
+  font-size: 35px;
+  font-weight: bolder;
+  color: #ff0078;
+  margin-bottom: 30px;
+}
+
+  label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 0px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  

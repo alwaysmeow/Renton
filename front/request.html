@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/requests_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Запрос перевода</title>
 </head>
@@ -29,15 +30,18 @@
         </div>
     </header>
     <main>
-        <label for="amount">Сумма перевода:</label><br>
-        <input type="number" id="amount" name="amount"><br>
-        <label for="name">Счет для перевода:</label><br>
-        <select name="" id="">
-            <option value="">MIR Gold ** 6517</option>
-            <option value="">Кредитная ** 0089</option>
-            <option value="">Дебетовая "Главная" ** 0367</option>
-        </select><br>
-        <input type="submit" value="Отправить">
+        <div class = "form">
+            <div class="req_label">Запрос перевода</div>
+            <label for="amount">Сумма перевода:</label><br>
+            <input type="number" id="amount" name="amount"><br>
+            <label for="name">Счет для перевода:</label><br>
+            <select name="" id="">
+                <option value="">MIR Gold ** 6517</option>
+                <option value="">Кредитная ** 0089</option>
+                <option value="">Дебетовая "Главная" ** 0367</option>
+            </select><br>
+            <input type="submit" value="Отправить">
+        </div>
     </main>
     <footer>
         <div>
